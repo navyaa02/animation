@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".pic1").animate({
+                right:"0px",
+            },4000,function(){
+                $(".pic1").css("transform","scaleX(-1)");
+            });
+             $(".pic1").animate({
+                bottom:"0px",
+            },3000,);
+            $(".pic1").animate({
+                left:"0px",
+            },4000,function(){
+                $(".pic1").css("transform","scalex(-1)");
+            });
+            $(".pic1").animate({
+                top:"0px",
+            },4000,function(){
+                $(".pic1").css("transform","scalex(1)");
+            });
+        });
+            
+    </script>
+  </head>
+  <body>
+    <style>
+        .wter{
+            background-image: url(sea.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+        .pic1{
+            position: absolute;
+            height: 100px;
+           
+            
+        }
+    </style>
+    <div class="wter">
+        <img src="fishh.gif" alt="fish" class="pic1" height="60px">
+    </div>
+  </body>
+  </html>
